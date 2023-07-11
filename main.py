@@ -25,7 +25,7 @@ This parameter allows you to access and modify class-level variables and call ot
     """
     @classmethod
     def add_year(cls):
-        Person.year=Person.year+1
+        cls.year=cls.year+1
 
 # Creating an instance of the Person class with arguments
 person1 = Person("Muhammed althaf", 27, "kallambalam")
@@ -45,8 +45,8 @@ person2.display()
 
 print("________________________________________________")
 Person.add_year()
-person1.add_age()
-person2.add_age()
+#person1.add_age()
+#person2.add_age()
 person1.relocate("Abu Dhabi")
 person2.relocate("madanthapacha")
 
