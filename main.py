@@ -27,6 +27,12 @@ This parameter allows you to access and modify class-level variables and call ot
     def add_year(cls):
         cls.year=cls.year+1
 
+    @staticmethod
+    def display_welcome():
+        print("--------------------Welcome to Mas Group and Comapanies---------------------------")
+
+Person.display_welcome()
+
 # Creating an instance of the Person class with arguments
 person1 = Person("Muhammed althaf", 27, "kallambalam")
 person2 = Person("jaseela ashraf ", 21, "idavoorkonam")
